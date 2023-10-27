@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ITFLAB2</title>
+    <script>
+        function display(){
+            console.log(document.getElementById("username").value)
+        }
+    </script>
 </head>
 <body>
     <main class = "content">
@@ -13,16 +18,28 @@
                 <!--Avatar-->
                 <div class="avatar"><img src="hoshino.jpg"></div>
                 <div class="noti"><p>2</p></div>
-                <div><p style="font-weight: 700; text-decoration: none;"><a href="https://www.instagram.com/tribearorion_/">User name, Gallery</a></p></div>
+                <div class="name"><a href="https://www.instagram.com/tribearorion_/" style="font-weight: 700; text-decoration: none;">User name, Gallery</a></div>
             </div>
             <div class="flex-item-2">
                 <!--Input-->
-                <div><label>Username</label><Input type="text" style="margin-left: 5px;" id="Username"><button style="margin-left: 5px;">set</button></div>
-                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image-url"><button style="margin-left: 5px;">set</button></div>
-                
+                <div><label>Username</label><Input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;">set</button></div>
 
             </div>
             </div>
+        <div class="gallery">
+            <div class="gallery-item" style = "grid-column: span2 / span 2;" ></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item" style = "grid-row: span2 / span 2;" ></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+
+
+            
+        </div>
         </div>
     </main>
 </body>
