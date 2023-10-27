@@ -11,7 +11,7 @@
         }
 
         function setImage(){
-            document.getElementsByClassName("profileing").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")";
+            document.getElementById("profileing").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")";
         }
     </script>
 </head>
@@ -20,7 +20,7 @@
         <div class = "flex-top">
             <div class="flex-item-1">
                 <!--Avatar-->
-                <div class="avatar"><img src="hoshino.jpg"></div>
+                <div class="avatar" id="profileing"></div>
                 <div class="noti"><p>2</p></div>
                 <a href="https://www.instagram.com/tribearorion_/" class="on-hover">
                 <p style = "font-weight: 700;" id="myusername">User name, Gallery</p>
@@ -28,8 +28,8 @@
             </div>
             <div class="flex-item-2">
                 <!--Input-->
-                <div><label>Username</label><Input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
-                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
+                <div><label>Set the username</label><Input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><label>Set the profile image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
 
             </div>
             </div>
