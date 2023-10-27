@@ -21,7 +21,6 @@ body {
 }
 
 .flex-item-1:hover{
-    cursor: pointer;
     color: blue;
     text-decoration: underline;
 }
