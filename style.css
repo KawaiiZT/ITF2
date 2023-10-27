@@ -1,6 +1,9 @@
+body {
+    font-family: sans-serif;
+}
 .content {
     border: 3px solid #808080;
-    width: 1024;
+    width: 1024px;
     margin: auto;
 }
 .flex-top {
@@ -10,5 +13,36 @@
 }
 
 .flex-item-1 {
+    position: relative;
     text-align: center;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-item-1:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.noti{
+    position: absolute;
+    display: grid;
+    background-color: tomato; 
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 9999px;
+    right: 10px;
+    bottom: 50px;
+    place-items: center;
+    color: white;
+}
+
+.avatar {
+    background-color: grey;
+    overflow: hidden;
+    width: 191px;
+    height: 191px; 
+    border-radius: 9999px;
 }
