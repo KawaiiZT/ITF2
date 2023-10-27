@@ -46,3 +46,10 @@ body {
     height: 191px; 
     border-radius: 9999px;
 }
+
+.flex-item-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
